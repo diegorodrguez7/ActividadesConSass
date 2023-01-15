@@ -1,0 +1,14 @@
+$color-fondo: grey;
+$color-letra: #ec6d05;
+body{
+    background-color: $color-fondo;
+}
+h1{
+    font-size: 30px;
+    color:$color-letra;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+// font-family: 'Nunito', sans-serif;
+@import "variables";
+
+.titulo {
+    color: random-color();
+}
+.subtitulo {
+    color: random-color2();
+}
+
+h1 {
+    @include nuevoestilo;
+}
+h2 {
+    @include nuevoestilo2;
+}
+
+nav {
+    @include nav-horizontal;
+}
+
+article {
+    background-color: randomColorBackground();
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 1rem;
+}
+
+html {
+    max-width: 1400px;
+    margin: 0;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    margin-left: 10%;
+}
+header {
+    background-color: $color1;
+}
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.1rem; /*110% del tamaño del cuerpo*/
+}
+.logo {
+    float: left;
+    max-width: 10%;
+    width: auto;
+    height: 50px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 0 10px; /* agrega un padding minimo entre los elementos */
+    list-style: none;
+    text-transform: uppercase;
+}
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $color2;
+    text-transform: uppercase;
+}
+li a:hover {
+    font-weight: 700;
+    color: $color3;
+}
+section {
+    min-height: 20em;
+}
+footer p {
+    border: $lineaExterior;
+    background-color: $color1;
+    min-height: 4em;
+    font-size: 0.8rem;
+}
+footer div {
+    border: $lineaExterior;
+    background-color: $color1;
+    min-height: 4em;
+}
+img {
+    max-width: 3em;
+    width: auto;
+    height: 50px;
+}

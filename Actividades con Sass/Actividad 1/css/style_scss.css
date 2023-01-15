@@ -1,0 +1,14 @@
+body {
+  background-color: grey;
+}
+
+h1 {
+  font-size: 30px;
+  color: #ec6d05;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+//! VARIABLES
+$color1: #fce0ff;
+$color2: black;
+$color3: red;
+$lineaExterior: 3px solid white;
+
+//?Random color tonalidad verde para titulo.
+@function random-color2() {
+  $hue: 0;
+  $saturation: random(255);
+  $lightness: 0;
+  @return rgb($hue, $saturation, $lightness);
+}
+
+//?Random color tonalidad roja para titulo.
+@function random-color() {
+  $hue: random(255);
+  $saturation: 0;
+  $lightness: 0;
+  @return rgb($hue, $saturation, $lightness);
+}
+
+//?Random color para el background de los articles.
+@function randomColorBackground() {
+  $red: random(255);
+  $green: random(255);
+  $blue: random(255);
+  @return rgba($red, $green, $blue, 0.5);
+}
+
+//?Este mixin sirve para darle estilo a un titulo
+@mixin nuevoestilo {
+  font-weight: 700;
+  font-size: 2rem; /*200% del tamaño del cuerpo*/
+}
+//?Este mixin sirve para darle estilo a un subtitulo
+@mixin nuevoestilo2 {
+  font-weight: 400;
+  font-size: 1.5rem; /*150% del tamaño del cuerpo*/
+}
+ 
+//?Los estilos de lista horizontal del nav (salvo los enlaces) deben ser reutilizables mediante un @mixin.
+@mixin nav-horizontal {
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: $color1;
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
